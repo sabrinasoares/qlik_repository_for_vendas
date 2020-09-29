@@ -1,0 +1,541 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 41,
+    "qTags": [
+      "$text",
+      "$key",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 10,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 5,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 8,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "Ano",
+    "qCardinal": 4,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  },
+  {
+    "qName": "Categoria",
+    "qCardinal": 8,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Categorias"
+    ]
+  },
+  {
+    "qName": "CategoriaID",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Categorias",
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qName": "ChaveProduto",
+    "qCardinal": 77,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qName": "Cidade",
+    "qCardinal": 29,
+    "qTags": [
+      "$text",
+      "$geoname",
+      "$relates_QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "Cliente",
+    "qCardinal": 295,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "ClienteID",
+    "qCardinal": 295,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos",
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "ContaPedidoID",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  },
+  {
+    "qName": "Custo Unitario",
+    "qCardinal": 75,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qName": "CustoOrcamento",
+    "qCardinal": 19,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Orcamento"
+    ]
+  },
+  {
+    "qName": "CustoProduto",
+    "qCardinal": 1139,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "CustoReal",
+    "qCardinal": 17,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Orcamento"
+    ]
+  },
+  {
+    "qName": "Código IBGE",
+    "qCardinal": 295,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "Data Pedido",
+    "qCardinal": 547,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  },
+  {
+    "qName": "Desconto",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Endereco",
+    "qCardinal": 295,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "Estado",
+    "qCardinal": 19,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "Fornecedor",
+    "qCardinal": 29,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Forncedores"
+    ]
+  },
+  {
+    "qName": "FornecedorID",
+    "qCardinal": 29,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Forncedores",
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qName": "Frete",
+    "qCardinal": 783,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  },
+  {
+    "qName": "Margem",
+    "qCardinal": 1884,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Mes",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  },
+  {
+    "qName": "Nome Contato",
+    "qCardinal": 295,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "País",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$geoname",
+      "$relates_QVD/Transformado/Dimensoes/Clientes.País_GeoInfo"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Clientes"
+    ]
+  },
+  {
+    "qName": "PedidoID",
+    "qCardinal": 1672,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos",
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  },
+  {
+    "qName": "Preco Unitario",
+    "qCardinal": 60,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qName": "PrecoUnitarioPedido",
+    "qCardinal": 1697,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Produto",
+    "qCardinal": 77,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qName": "ProdutoID",
+    "qCardinal": 77,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos",
+      "QVD/Transformado/Dimensoes/Produtos"
+    ]
+  },
+  {
+    "qIsHidden": true,
+    "qName": "QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo",
+    "qCardinal": 29,
+    "qTags": [
+      "$geopoint",
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$relates_Cidade"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qName": "QVD/Transformado/Dimensoes/Clientes.País_GeoInfo",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$geopolygon",
+      "$relates_País"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "QVD/Transformado/Fatos/Orcamento.Ano",
+    "qCardinal": 4,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Orcamento"
+    ]
+  },
+  {
+    "qName": "Quantidade-Escritorio",
+    "qCardinal": 56,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos",
+      "QVD/Transformado/Fatos/Orcamento"
+    ]
+  },
+  {
+    "qName": "ReceitaOrcamento",
+    "qCardinal": 17,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Orcamento"
+    ]
+  },
+  {
+    "qName": "ReceitaReal",
+    "qCardinal": 20,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Orcamento"
+    ]
+  },
+  {
+    "qName": "Transportador",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Dimensoes/Transportadoras"
+    ]
+  },
+  {
+    "qName": "TransportadorID",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos",
+      "QVD/Transformado/Dimensoes/Transportadoras"
+    ]
+  },
+  {
+    "qName": "Valor Bruto",
+    "qCardinal": 2070,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "ValorLiquido",
+    "qCardinal": 2097,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Venda Liquida",
+    "qCardinal": 2130,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "VendedorID",
+    "qCardinal": 9,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "QVD/Transformado/Fatos/Pedidos"
+    ]
+  }
+]
