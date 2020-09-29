@@ -6,7 +6,8 @@
     },
     "qMetaDef": {
       "title": "Fornecedor",
-      "description": ""
+      "description": "",
+      "isBlueprintItem": true
     },
     "rank": 1,
     "thumbnail": {

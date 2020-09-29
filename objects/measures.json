@@ -24,7 +24,8 @@
     "qMetaDef": {
       "title": "Total Venda",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   }
 ]

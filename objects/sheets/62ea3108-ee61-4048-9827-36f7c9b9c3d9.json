@@ -5,14 +5,13 @@
       "qType": "sheet"
     },
     "qMetaDef": {
-      "title": "Painel",
-      "description": ""
+      "title": "My new sheet",
+      "description": "",
+      "isBlueprintItem": true
     },
     "rank": null,
     "thumbnail": {
-      "qStaticContentUrlDef": {
-        "qUrl": "/appcontent/4fe48443-2e37-4927-9ccb-ed554157d08b/sheet_thumb_62ea3108-ee61-4048-9827-36f7c9b9c3d9-0.7092144992042466.png"
-      }
+      "qStaticContentUrlDef": {}
     },
     "columns": 24,
     "rows": 12,
@@ -145,7 +144,7 @@
           "qMeasures": [
             {
               "qDef": {
-                "qLabel": "Venda Liquida",
+                "qLabel": "Valor Líquido",
                 "qTags": [],
                 "qGrouping": "N",
                 "qDef": "=sum([Venda Liquida])",
@@ -225,20 +224,22 @@
               "qDimensions": [],
               "qMeasures": [
                 {
-                  "qLibraryId": "nXBAZD",
                   "qDef": {
+                    "qLabel": "Total Clientes",
                     "qTags": [],
                     "qGrouping": "N",
+                    "qDef": "Count(Cliente)",
+                    "qNumFormat": {
+                      "qType": "U",
+                      "qnDec": 10,
+                      "qUseThou": 0
+                    },
                     "qAccumulate": 0,
                     "qActiveExpression": 0,
                     "qExpressions": [],
                     "autoSort": true,
-                    "cId": "xzjjfc",
-                    "numFormatFromTemplate": true,
-                    "quarantine": {
-                      "qNumFormat": {},
-                      "isCustomFormatted": false
-                    }
+                    "cId": "axKdjU",
+                    "numFormatFromTemplate": true
                   },
                   "qSortBy": {
                     "qExpression": {}
