@@ -5,12 +5,14 @@
       "qType": "sheet"
     },
     "qMetaDef": {
-      "title": "My new sheet",
+      "title": "Painel",
       "description": ""
     },
     "rank": null,
     "thumbnail": {
-      "qStaticContentUrlDef": {}
+      "qStaticContentUrlDef": {
+        "qUrl": "/appcontent/4fe48443-2e37-4927-9ccb-ed554157d08b/sheet_thumb_62ea3108-ee61-4048-9827-36f7c9b9c3d9-0.7092144992042466.png"
+      }
     },
     "columns": 24,
     "rows": 12,
@@ -143,7 +145,7 @@
           "qMeasures": [
             {
               "qDef": {
-                "qLabel": "sum([Venda Liquida])",
+                "qLabel": "Venda Liquida",
                 "qTags": [],
                 "qGrouping": "N",
                 "qDef": "=sum([Venda Liquida])",
@@ -217,14 +219,82 @@
             "qMsg": {}
           },
           "qColumnOrder": [],
-          "qExpansionState": []
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [
+                {
+                  "qLibraryId": "nXBAZD",
+                  "qDef": {
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "xzjjfc",
+                    "numFormatFromTemplate": true,
+                    "quarantine": {
+                      "qNumFormat": {},
+                      "isCustomFormatted": false
+                    }
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                }
+              ],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
         },
         "refLine": {
           "refLines": [],
           "dimRefLines": []
         },
         "showTitles": true,
-        "title": "sum(Venda Liquida) by Transportador",
+        "title": "Vendas",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
@@ -233,7 +303,7 @@
         "barGrouping": {
           "grouping": "grouped"
         },
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "scrollbar": "miniChart",
         "scrollStartPos": 0,
         "gridLine": {
