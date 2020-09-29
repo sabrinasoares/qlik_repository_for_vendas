@@ -19,3 +19,4 @@ master|[https://qliksense/sense/app/4fe48443-2e37-4927-9ccb-ed554157d08b](https:
 vendas-prod|[https://qliksense/sense/app/601f3845-30ce-45ff-be05-fa1f2ecb4c69](https://qliksense/sense/app/601f3845-30ce-45ff-be05-fa1f2ecb4c69)
 qlik_repository_for_vendas|[https://qliksense/sense/app/0c3f31b2-6747-420f-9d74-7cbfeda22655](https://qliksense/sense/app/0c3f31b2-6747-420f-9d74-7cbfeda22655)
 vendas-producao|[https://qliksense/sense/app/10feb71c-5093-4469-b372-2408fa767303](https://qliksense/sense/app/10feb71c-5093-4469-b372-2408fa767303)
+vendas-clever|[https://qliksense/sense/app/72e05339-a090-42d2-a3c6-ab6e5d209e33](https://qliksense/sense/app/72e05339-a090-42d2-a3c6-ab6e5d209e33)
