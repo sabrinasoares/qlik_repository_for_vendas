@@ -3,12 +3,16 @@
     {
       "qId": "62ea3108-ee61-4048-9827-36f7c9b9c3d9",
       "qType": "sheet",
-      "modifiedDate": "2020-09-29T12:36:43.962Z"
+      "modifiedDate": "2020-09-29T12:53:47.513Z"
     },
     {
       "qId": "796c82c7-9385-468a-ab7a-df417037ddad",
       "qType": "appprops",
-      "modifiedDate": "2020-09-29T12:36:43.962Z"
+      "modifiedDate": "2020-09-29T12:50:18.457Z"
+    },
+    {
+      "qId": "BkrekY",
+      "qType": "kpi"
     },
     {
       "qId": "EYMdPBw",
@@ -31,17 +35,14 @@
       "qType": "slide"
     },
     {
-      "qId": "QVGVbRN",
-      "qType": "map"
-    },
-    {
       "qId": "c4751b4c-a5f8-4470-b449-5ef437d1782b",
-      "qType": "sheet"
+      "qType": "sheet",
+      "modifiedDate": "2020-09-29T12:50:18.457Z"
     },
     {
       "qId": "ea8f7d28-7f35-4cfa-bfd7-40b9e2fd678a",
       "qType": "story",
-      "modifiedDate": "2020-09-29T12:36:43.962Z"
+      "modifiedDate": "2020-09-29T12:50:18.457Z"
     },
     {
       "qId": "hZQJp",
@@ -54,7 +55,7 @@
     {
       "qId": "nXBAZD",
       "qType": "measure",
-      "modifiedDate": "2020-09-29T12:36:43.962Z"
+      "modifiedDate": "2020-09-29T12:49:31.536Z"
     }
   ]
 }
