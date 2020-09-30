@@ -22,3 +22,4 @@ vendas-producao|[https://qliksense/sense/app/10feb71c-5093-4469-b372-2408fa76730
 vendas-clever|[https://qliksense/sense/app/72e05339-a090-42d2-a3c6-ab6e5d209e33](https://qliksense/sense/app/72e05339-a090-42d2-a3c6-ab6e5d209e33)
 vendashomolog|[https://qliksense/sense/app/f5c58fec-5b16-4004-afd8-9480be7983c5](https://qliksense/sense/app/f5c58fec-5b16-4004-afd8-9480be7983c5)
 vendas-alex|[https://qliksense/sense/app/cb8c0774-dc20-4b20-84bd-db8ee1a40c48](https://qliksense/sense/app/cb8c0774-dc20-4b20-84bd-db8ee1a40c48)
+vendas-prod-franco|[https://qliksense/sense/app/9bb21218-7b24-46b2-b968-4f13dc0426a2](https://qliksense/sense/app/9bb21218-7b24-46b2-b968-4f13dc0426a2)
