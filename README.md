@@ -24,4 +24,3 @@ vendashomolog|[https://qliksense/sense/app/f5c58fec-5b16-4004-afd8-9480be7983c5]
 vendas-alex|[https://qliksense/sense/app/cb8c0774-dc20-4b20-84bd-db8ee1a40c48](https://qliksense/sense/app/cb8c0774-dc20-4b20-84bd-db8ee1a40c48)
 vendas-prod-franco|[https://qliksense/sense/app/9bb21218-7b24-46b2-b968-4f13dc0426a2](https://qliksense/sense/app/9bb21218-7b24-46b2-b968-4f13dc0426a2)
 vendas-gito|[https://qliksense.toccato.com.br/sense/app/f0b18701-ac00-46ba-baff-e4faacaede1e](https://qliksense.toccato.com.br/sense/app/f0b18701-ac00-46ba-baff-e4faacaede1e)
-orcamento|[https://qliksense/sense/app/b8c23b82-e721-4df1-b6ab-e7b5cb4b035e](https://qliksense/sense/app/b8c23b82-e721-4df1-b6ab-e7b5cb4b035e)
