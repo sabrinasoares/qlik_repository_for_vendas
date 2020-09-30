@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "qInfo": {
+      "qId": "DcVBKG",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Segmento",
+        "Subsegmento",
+        "Bandeira Loja"
+      ],
+      "qFieldLabels": [],
+      "title": "Segmento/SubSegmento",
+      "coloring": {
+        "changeHash": "0.607989178760918",
+        "colorMapRef": "DcVBKG"
+      }
+    },
+    "qMetaDef": {
+      "title": "Segmento/SubSegmento",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TDnqD",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Desc_Produto"
+      ],
+      "qFieldLabels": [
+        "Produto"
+      ],
+      "title": "Produto",
+      "coloring": {
+        "changeHash": "0.7389518185518682"
+      }
+    },
+    "qMetaDef": {
+      "title": "Produto",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  }
+]

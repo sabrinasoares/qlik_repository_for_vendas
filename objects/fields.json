@@ -3,7 +3,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$Field",
-    "qCardinal": 41,
+    "qCardinal": 38,
     "qTags": [
       "$text",
       "$key",
@@ -171,16 +171,6 @@
     ]
   },
   {
-    "qName": "Custo Unitario",
-    "qCardinal": 75,
-    "qTags": [
-      "$numeric"
-    ],
-    "qSrcTables": [
-      "QVD/Transformado/Dimensoes/Produtos"
-    ]
-  },
-  {
     "qName": "CustoOrcamento",
     "qCardinal": 19,
     "qTags": [
@@ -322,17 +312,6 @@
     ]
   },
   {
-    "qName": "Nome Contato",
-    "qCardinal": 295,
-    "qTags": [
-      "$ascii",
-      "$text"
-    ],
-    "qSrcTables": [
-      "QVD/Transformado/Dimensoes/Clientes"
-    ]
-  },
-  {
     "qName": "País",
     "qCardinal": 1,
     "qTags": [
@@ -356,16 +335,6 @@
     "qSrcTables": [
       "QVD/Transformado/Fatos/DetalhesPedidos",
       "QVD/Transformado/Fatos/Pedidos"
-    ]
-  },
-  {
-    "qName": "Preco Unitario",
-    "qCardinal": 60,
-    "qTags": [
-      "$numeric"
-    ],
-    "qSrcTables": [
-      "QVD/Transformado/Dimensoes/Produtos"
     ]
   },
   {

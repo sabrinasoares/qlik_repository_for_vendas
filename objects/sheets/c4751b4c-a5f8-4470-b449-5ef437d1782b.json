@@ -12,7 +12,7 @@
     "rank": 1,
     "thumbnail": {
       "qStaticContentUrlDef": {
-        "qUrl": "/appcontent/4fe48443-2e37-4927-9ccb-ed554157d08b/sheet_thumb_c4751b4c-a5f8-4470-b449-5ef437d1782b-0.334874695368383.png"
+        "qUrl": "/appcontent/b8c23b82-e721-4df1-b6ab-e7b5cb4b035e/sheet_thumb_c4751b4c-a5f8-4470-b449-5ef437d1782b-0.334874695368383.png"
       }
     },
     "columns": 24,
@@ -67,7 +67,7 @@
               "qDef": {
                 "qGrouping": "N",
                 "qFieldDefs": [
-                  "[Categoria]"
+                  "Categoria"
                 ],
                 "qFieldLabels": [
                   "Categoria"
@@ -118,7 +118,7 @@
               "qDef": {
                 "qGrouping": "N",
                 "qFieldDefs": [
-                  "[Fornecedor]"
+                  "Fornecedor"
                 ],
                 "qFieldLabels": [
                   "Fornecedor"
@@ -315,7 +315,7 @@
               "qDef": {
                 "qGrouping": "N",
                 "qFieldDefs": [
-                  "[Fornecedor]"
+                  "Fornecedor"
                 ],
                 "qFieldLabels": [
                   "Fornecedor"
