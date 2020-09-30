@@ -1,6 +1,34 @@
 [
   {
     "qInfo": {
+      "qId": "ASMvaj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Orçamento",
+      "qDef": "sum(CustoOrcamento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qNumFormat": {
+        "qType": "M",
+        "qnDec": 2,
+        "qUseThou": 0,
+        "qFmt": "R$#.##0,00;-R$#.##0,00",
+        "qDec": ",",
+        "qThou": "."
+      },
+      "isCustomFormatted": false,
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "Orçamento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
       "qId": "nXBAZD",
       "qType": "measure"
     },

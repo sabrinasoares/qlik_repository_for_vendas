@@ -1,35 +1,18 @@
 {
   "qInfos": [
     {
-      "qId": "62ea3108-ee61-4048-9827-36f7c9b9c3d9",
-      "qType": "sheet",
-      "modifiedDate": "2020-09-30T18:49:26.255Z"
-    },
-    {
       "qId": "796c82c7-9385-468a-ab7a-df417037ddad",
       "qType": "appprops",
       "modifiedDate": "2020-09-30T18:49:26.255Z"
     },
     {
-      "qId": "BkrekY",
-      "qType": "kpi"
+      "qId": "ASMvaj",
+      "qType": "measure"
     },
     {
       "qId": "DcVBKG",
       "qType": "dimension",
       "modifiedDate": "2020-09-30T18:49:26.255Z"
-    },
-    {
-      "qId": "EYMdPBw",
-      "qType": "scatterplot"
-    },
-    {
-      "qId": "HdtLXhD",
-      "qType": "barchart"
-    },
-    {
-      "qId": "KMQqgG",
-      "qType": "treemap"
     },
     {
       "qId": "LQmLU",
@@ -53,27 +36,14 @@
       "modifiedDate": "2020-09-30T18:49:26.255Z"
     },
     {
-      "qId": "c4751b4c-a5f8-4470-b449-5ef437d1782b",
-      "qType": "sheet",
-      "modifiedDate": "2020-09-30T18:49:26.255Z"
-    },
-    {
       "qId": "de2b205e-3cf6-4b5c-ad60-0726d7018488",
       "qType": "sheet",
-      "modifiedDate": "2020-09-30T18:49:26.255Z"
+      "modifiedDate": "2020-09-30T18:52:36.475Z"
     },
     {
       "qId": "ea8f7d28-7f35-4cfa-bfd7-40b9e2fd678a",
       "qType": "story",
       "modifiedDate": "2020-09-30T18:49:26.255Z"
-    },
-    {
-      "qId": "hZQJp",
-      "qType": "treemap"
-    },
-    {
-      "qId": "jXqXqk",
-      "qType": "combochart"
     },
     {
       "qId": "nXBAZD",

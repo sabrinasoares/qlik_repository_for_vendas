@@ -200,22 +200,20 @@
           ],
           "qMeasures": [
             {
+              "qLibraryId": "ASMvaj",
               "qDef": {
-                "qLabel": "sum([CustoOrcamento])",
                 "qTags": [],
                 "qGrouping": "N",
-                "qDef": "=sum([CustoOrcamento])",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
                 "qAccumulate": 0,
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
-                "cId": "jveSnFk",
-                "numFormatFromTemplate": true
+                "cId": "NjPjJb",
+                "numFormatFromTemplate": true,
+                "quarantine": {
+                  "qNumFormat": {},
+                  "isCustomFormatted": false
+                }
               },
               "qSortBy": {
                 "qSortByNumeric": -1,
@@ -280,10 +278,31 @@
             "qMsg": {}
           },
           "qColumnOrder": [],
-          "qExpansionState": []
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
         },
         "showTitles": true,
-        "title": "sum(CustoOrcamento) por Estado e Transportador",
+        "title": "Orçamento por Estado e Transportador",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
@@ -399,22 +418,20 @@
           ],
           "qMeasures": [
             {
+              "qLibraryId": "ASMvaj",
               "qDef": {
-                "qLabel": "sum([CustoOrcamento])",
                 "qTags": [],
                 "qGrouping": "N",
-                "qDef": "=sum([CustoOrcamento])",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
                 "qAccumulate": 0,
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
-                "cId": "JtPPWzk",
-                "numFormatFromTemplate": true
+                "cId": "Hutw",
+                "numFormatFromTemplate": true,
+                "quarantine": {
+                  "qNumFormat": {},
+                  "isCustomFormatted": false
+                }
               },
               "qSortBy": {
                 "qSortByNumeric": -1,
@@ -475,14 +492,35 @@
             "qMsg": {}
           },
           "qColumnOrder": [],
-          "qExpansionState": []
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
         },
         "refLine": {
           "refLines": [],
           "dimRefLines": []
         },
         "showTitles": true,
-        "title": "sum(CustoOrcamento) acima de Data Pedido",
+        "title": "Orçamento acima de Data Pedido",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
@@ -681,22 +719,20 @@
           ],
           "qMeasures": [
             {
+              "qLibraryId": "ASMvaj",
               "qDef": {
-                "qLabel": "sum([CustoOrcamento])",
                 "qTags": [],
                 "qGrouping": "N",
-                "qDef": "=sum([CustoOrcamento])",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
                 "qAccumulate": 0,
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
-                "cId": "mADfkmg",
-                "numFormatFromTemplate": true
+                "cId": "kmkZFF",
+                "numFormatFromTemplate": true,
+                "quarantine": {
+                  "qNumFormat": {},
+                  "isCustomFormatted": false
+                }
               },
               "qSortBy": {
                 "qSortByNumeric": -1,
@@ -757,14 +793,35 @@
             "qMsg": {}
           },
           "qColumnOrder": [],
-          "qExpansionState": []
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
         },
         "refLine": {
           "refLines": [],
           "dimRefLines": []
         },
         "showTitles": true,
-        "title": "sum(CustoOrcamento) por Data Pedido (acumulado no ano) e Transportador",
+        "title": "Orçamento por Data Pedido (acumulado no ano) e Transportador",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
@@ -909,22 +966,20 @@
           ],
           "qMeasures": [
             {
+              "qLibraryId": "ASMvaj",
               "qDef": {
-                "qLabel": "sum([CustoOrcamento])",
                 "qTags": [],
                 "qGrouping": "N",
-                "qDef": "=sum([CustoOrcamento])",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
                 "qAccumulate": 0,
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
-                "cId": "cMVRmvj",
-                "numFormatFromTemplate": true
+                "cId": "VtjhNK",
+                "numFormatFromTemplate": true,
+                "quarantine": {
+                  "qNumFormat": {},
+                  "isCustomFormatted": false
+                }
               },
               "qSortBy": {
                 "qSortByNumeric": -1,
@@ -1035,14 +1090,35 @@
             "qMsg": {}
           },
           "qColumnOrder": [],
-          "qExpansionState": []
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
         },
         "refLine": {
           "refLinesX": [],
           "refLinesY": []
         },
         "showTitles": true,
-        "title": "Comparação de sum(CustoOrcamento) e sum(Desconto) para VendedorID",
+        "title": "Comparação de Orçamento e Desconto para VendedorID",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
