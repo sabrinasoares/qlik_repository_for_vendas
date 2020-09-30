@@ -6,7 +6,8 @@
     },
     "qMetaDef": {
       "title": "Orçamento",
-      "description": ""
+      "description": "",
+      "isBlueprintItem": true
     },
     "rank": 2,
     "thumbnail": {
