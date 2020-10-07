@@ -67,7 +67,7 @@
               "qDef": {
                 "qGrouping": "N",
                 "qFieldDefs": [
-                  "[Categoria]"
+                  "Categoria"
                 ],
                 "qFieldLabels": [
                   "Categoria"
@@ -118,7 +118,7 @@
               "qDef": {
                 "qGrouping": "N",
                 "qFieldDefs": [
-                  "[Fornecedor]"
+                  "Fornecedor"
                 ],
                 "qFieldLabels": [
                   "Fornecedor"
@@ -315,7 +315,7 @@
               "qDef": {
                 "qGrouping": "N",
                 "qFieldDefs": [
-                  "[Fornecedor]"
+                  "Fornecedor"
                 ],
                 "qFieldLabels": [
                   "Fornecedor"

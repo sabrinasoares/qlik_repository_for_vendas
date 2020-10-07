@@ -1,0 +1,29 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "500017e2-1723-4386-a6ad-305e40f74ebe",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "Minha nova pasta",
+      "description": ""
+    },
+    "rank": 2,
+    "thumbnail": {
+      "qStaticContentUrlDef": {}
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [],
+    "qChildListDef": {
+      "qData": {
+        "title": "/title"
+      }
+    },
+    "gridResolution": "small",
+    "layoutOptions": {
+      "mobileLayout": "LIST"
+    }
+  },
+  "qChildren": []
+}

@@ -1,1 +1,79 @@
-[]
+[
+  {
+    "qInfo": {
+      "qId": "DcVBKG",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Segmento",
+        "Subsegmento",
+        "Bandeira Loja"
+      ],
+      "qFieldLabels": [],
+      "title": "Segmento/SubSegmento",
+      "coloring": {
+        "changeHash": "0.607989178760918",
+        "colorMapRef": "DcVBKG"
+      }
+    },
+    "qMetaDef": {
+      "title": "Segmento/SubSegmento",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HcvAN",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "=If(Len(Trim([Bandeira Loja]))>2,[Bandeira Loja])"
+      ],
+      "qFieldLabels": [
+        "Bandeira"
+      ],
+      "title": "Bandeira",
+      "coloring": {
+        "changeHash": "0.5472789477008697",
+        "colorMapRef": "HcvAN"
+      }
+    },
+    "qMetaDef": {
+      "title": "Bandeira",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TDnqD",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Desc_Produto"
+      ],
+      "qFieldLabels": [
+        "Produto"
+      ],
+      "title": "Produto",
+      "coloring": {
+        "changeHash": "0.7389518185518682"
+      }
+    },
+    "qMetaDef": {
+      "title": "Produto",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  }
+]

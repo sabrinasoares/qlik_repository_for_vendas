@@ -17,20 +17,6 @@
     "rows": 12,
     "cells": [
       {
-        "name": "BkrekY",
-        "type": "kpi",
-        "col": 0,
-        "row": 0,
-        "colspan": 12,
-        "rowspan": 6,
-        "bounds": {
-          "y": 0,
-          "x": 0,
-          "width": 50,
-          "height": 50
-        }
-      },
-      {
         "name": "HdtLXhD",
         "type": "barchart",
         "col": 12,
@@ -68,6 +54,20 @@
         "bounds": {
           "y": 50,
           "x": 50,
+          "width": 50,
+          "height": 50
+        }
+      },
+      {
+        "name": "QVGVbRN",
+        "type": "map",
+        "col": 0,
+        "row": 0,
+        "colspan": 12,
+        "rowspan": 6,
+        "bounds": {
+          "y": 0,
+          "x": 0,
           "width": 50,
           "height": 50
         }
@@ -394,7 +394,7 @@
           "qMeasures": [
             {
               "qDef": {
-                "qLabel": "sum([Venda Liquida])",
+                "qLabel": "Valor Líquido",
                 "qTags": [],
                 "qGrouping": "N",
                 "qDef": "=sum([Venda Liquida])",
@@ -468,14 +468,84 @@
             "qMsg": {}
           },
           "qColumnOrder": [],
-          "qExpansionState": []
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [
+                {
+                  "qDef": {
+                    "qLabel": "Total Clientes",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "Count(Cliente)",
+                    "qNumFormat": {
+                      "qType": "U",
+                      "qnDec": 10,
+                      "qUseThou": 0
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "axKdjU",
+                    "numFormatFromTemplate": true
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                }
+              ],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
         },
         "refLine": {
           "refLines": [],
           "dimRefLines": []
         },
         "showTitles": true,
-        "title": "sum(Venda Liquida) by Transportador",
+        "title": "Vendas",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
@@ -484,7 +554,7 @@
         "barGrouping": {
           "grouping": "grouped"
         },
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "scrollbar": "miniChart",
         "scrollStartPos": 0,
         "gridLine": {
@@ -855,109 +925,135 @@
     {
       "qProperty": {
         "qInfo": {
-          "qId": "BkrekY",
-          "qType": "kpi"
+          "qId": "QVGVbRN",
+          "qType": "map"
         },
         "qMetaDef": {},
-        "qHyperCubeDef": {
-          "qDimensions": [],
-          "qMeasures": [
-            {
-              "qLibraryId": "nXBAZD",
-              "qDef": {
-                "qTags": [],
-                "qGrouping": "N",
-                "qAccumulate": 0,
-                "qActiveExpression": 0,
-                "qExpressions": [],
-                "autoSort": true,
-                "cId": "NmGLCrC",
-                "numFormatFromTemplate": true,
-                "measureAxis": {
-                  "min": 0,
-                  "max": 100
-                },
-                "conditionalColoring": {
-                  "useConditionalColoring": false,
-                  "singleColor": 3,
-                  "paletteSingleColor": {
-                    "index": 6
-                  },
-                  "segments": {
-                    "limits": [],
-                    "paletteColors": [
-                      {
-                        "index": 6
-                      }
-                    ]
-                  }
-                },
-                "quarantine": {
-                  "qNumFormat": {},
-                  "isCustomFormatted": false
-                }
+        "gaLayers": [
+          {
+            "type": "PointLayer",
+            "cId": "cao_geoPointLayer",
+            "locationOrLatitude": {
+              "key": "=[QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo]",
+              "label": "QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo",
+              "type": "expression"
+            },
+            "locationDefault": "=[Customers.City_GeoInfo]",
+            "locationNamesAuto": true,
+            "locationType": "",
+            "locationCountry": {
+              "key": "",
+              "label": "",
+              "type": ""
+            },
+            "locationAdmin1": {
+              "key": "",
+              "label": "",
+              "type": ""
+            },
+            "locationAdmin2": {
+              "key": "",
+              "label": "",
+              "type": ""
+            },
+            "maxObjects": 4000,
+            "showLayer": true,
+            "hideCalcCond": false,
+            "exclFromAutozoom": false,
+            "layerSelectionsDisabled": false,
+            "color": {
+              "outline": {
+                "index": -1,
+                "color": "#7b7a78"
               },
-              "qSortBy": {
-                "qSortByNumeric": -1,
-                "qSortByLoadOrder": 1,
-                "qExpression": {}
+              "outlineOpacity": 1,
+              "opacity": 1,
+              "auto": false,
+              "mode": "primary",
+              "paletteColor": {
+                "index": 6,
+                "color": "#4477aa"
               },
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCond": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
+              "measureScheme": "sg",
+              "dimensionScheme": "12",
+              "colorExpression": "",
+              "expressionIsColor": true,
+              "measureMin": 0,
+              "measureMax": 10
+            },
+            "displayLegend": "auto",
+            "showSizeLegend": true,
+            "showToolTip": true,
+            "showInAllLevels": true,
+            "zoomRange": [
+              0,
+              20
+            ],
+            "showPopUp": true,
+            "displayUnselected": false,
+            "label": {
+              "show": false,
+              "expression": {
+                "key": "Cidade",
+                "label": "dimension.qDef.qFieldDefs[0]",
+                "type": "expression"
               },
-              "qTrendLines": [],
-              "qMiniChartDef": {
-                "qSortBy": {
-                  "qExpression": {}
-                },
-                "qOtherTotalSpec": {
-                  "qOtherMode": "OTHER_OFF",
-                  "qOtherCounted": {},
-                  "qOtherLimit": {},
-                  "qOtherLimitMode": "OTHER_GT_LIMIT",
-                  "qForceBadValueKeeping": true,
-                  "qApplyEvenWhenPossiblyWrongResult": true,
-                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                  "qTotalMode": "TOTAL_OFF",
-                  "qReferencedExpression": {}
-                },
-                "qMaxNumberPoints": -1,
-                "qAttributeExpressions": []
-              }
-            }
-          ],
-          "qInterColumnSortOrder": [
-            0
-          ],
-          "qSuppressMissing": true,
-          "qInitialDataFetch": [
-            {
-              "qLeft": 0,
-              "qTop": 0,
-              "qWidth": 500,
-              "qHeight": 10
-            }
-          ],
-          "qReductionMode": "N",
-          "qMode": "S",
-          "qPseudoDimPos": -1,
-          "qNoOfLeftDims": -1,
-          "qMaxStackedCells": 5000,
-          "qCalcCond": {},
-          "qTitle": {},
-          "qCalcCondition": {
-            "qCond": {},
-            "qMsg": {}
-          },
-          "qColumnOrder": [],
-          "qExpansionState": [],
-          "qLayoutExclude": {
+              "position": "TOP",
+              "showInAllLevels": true,
+              "visibleRange": [
+                0,
+                20
+              ]
+            },
+            "drillDown": {
+              "auto": true,
+              "showLevel0": true,
+              "showLevel1": true,
+              "showLevel2": true,
+              "showLevel3": true,
+              "showLevel4": true,
+              "showLevel5": true,
+              "showLevel6": true,
+              "showLevel7": true
+            },
             "qHyperCubeDef": {
-              "qDimensions": [],
+              "qDimensions": [
+                {
+                  "qDef": {
+                    "qGrouping": "N",
+                    "qFieldDefs": [
+                      "[Cidade]"
+                    ],
+                    "qFieldLabels": [
+                      "Cidade"
+                    ],
+                    "qSortCriterias": [],
+                    "qNumberPresentations": [],
+                    "qActiveField": 0,
+                    "cId": "dd0"
+                  },
+                  "qOtherTotalSpec": {
+                    "qOtherMode": "OTHER_OFF",
+                    "qOtherCounted": {},
+                    "qOtherLimit": {},
+                    "qOtherLimitMode": "OTHER_GT_LIMIT",
+                    "qForceBadValueKeeping": true,
+                    "qApplyEvenWhenPossiblyWrongResult": true,
+                    "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                    "qTotalMode": "TOTAL_OFF",
+                    "qReferencedExpression": {}
+                  },
+                  "qOtherLabel": {},
+                  "qTotalLabel": {},
+                  "qCalcCond": {},
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  }
+                }
+              ],
               "qMeasures": [],
               "qInterColumnSortOrder": [],
               "qInitialDataFetch": [],
@@ -974,31 +1070,486 @@
               },
               "qColumnOrder": [],
               "qExpansionState": []
+            },
+            "tooltip": {
+              "auto": true,
+              "data": {
+                "qHyperCubeDef": {
+                  "qDimensions": [],
+                  "qMeasures": [],
+                  "qInterColumnSortOrder": [],
+                  "qInitialDataFetch": [
+                    {
+                      "qLeft": 0,
+                      "qTop": 0,
+                      "qWidth": 1,
+                      "qHeight": 0
+                    }
+                  ],
+                  "qReductionMode": "N",
+                  "qMode": "S",
+                  "qPseudoDimPos": -1,
+                  "qNoOfLeftDims": -1,
+                  "qMaxStackedCells": 5000,
+                  "qCalcCond": {},
+                  "qTitle": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qColumnOrder": [],
+                  "qExpansionState": []
+                }
+              }
+            },
+            "size": {
+              "radiusMin": 4,
+              "radiusMax": 12,
+              "radiusValueMin": 0,
+              "radiusValueMax": 1,
+              "autoRadiusValueRange": true,
+              "expression": {
+                "key": "",
+                "label": "",
+                "type": "",
+                "qNumFormat": {
+                  "qType": "U"
+                }
+              },
+              "label": "",
+              "slider": [
+                8,
+                24
+              ],
+              "sliderSingle": 16,
+              "shape": "points",
+              "formatting": {
+                "qNumFormat": {
+                  "qType": "U"
+                }
+              }
             }
           }
+        ],
+        "mapSettings": {
+          "_layerType": "",
+          "baseMap": "default",
+          "projection": "default",
+          "mapLanguage": "auto",
+          "useImperialUnits": false,
+          "selectionType": "lasso",
+          "initialView": null,
+          "showLegend": true,
+          "sidebarAlignment": "auto",
+          "showFindLocationButton": false,
+          "showScaleBar": true,
+          "zoomLimitSwitch": false,
+          "zoomLimit": {
+            "range": [
+              0,
+              20
+            ]
+          },
+          "panLimitSwitch": false,
+          "panLimits": null,
+          "showDebugInfo": false
         },
-        "showTitles": false,
-        "title": "sum(Venda Liquida)",
+        "autoZoomOnSelection": true,
+        "showTitles": true,
+        "title": "Valores para Cidade",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
         "showDetails": false,
-        "showMeasureTitle": true,
-        "showSecondMeasureTitle": true,
-        "textAlign": "center",
-        "layoutBehavior": "responsive",
-        "fontSize": "M",
-        "useLink": false,
-        "sheetLink": "",
-        "openUrlInNewTab": true,
-        "visualization": "kpi",
-        "version": "0.1.0",
-        "isRecommended": true,
-        "qLayoutExclude": {
-          "disabled": {},
-          "quarantine": {}
+        "navigation": false,
+        "visualization": "map",
+        "gaVersion": 2,
+        "layers": [],
+        "recommendation": {
+          "chartType": "map",
+          "options": {
+            "visualization": "map",
+            "gaVersion": 2,
+            "gaLayers": [
+              {
+                "type": "PointLayer",
+                "cId": "cao_geoPointLayer",
+                "locationOrLatitude": {
+                  "key": "=[QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo]",
+                  "label": "QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo",
+                  "type": "expression"
+                },
+                "locationDefault": "=[Customers.City_GeoInfo]",
+                "locationNamesAuto": true,
+                "locationType": "",
+                "locationCountry": {
+                  "key": "",
+                  "label": "",
+                  "type": ""
+                },
+                "locationAdmin1": {
+                  "key": "",
+                  "label": "",
+                  "type": ""
+                },
+                "locationAdmin2": {
+                  "key": "",
+                  "label": "",
+                  "type": ""
+                },
+                "maxObjects": 4000,
+                "showLayer": true,
+                "hideCalcCond": false,
+                "exclFromAutozoom": false,
+                "layerSelectionsDisabled": false,
+                "color": {
+                  "outline": {
+                    "index": -1,
+                    "color": "#7b7a78"
+                  },
+                  "outlineOpacity": 1,
+                  "opacity": 1,
+                  "auto": false,
+                  "mode": "primary",
+                  "paletteColor": {
+                    "index": 6,
+                    "color": "#4477aa"
+                  },
+                  "measureScheme": "sg",
+                  "dimensionScheme": "12",
+                  "colorExpression": "",
+                  "expressionIsColor": true,
+                  "measureMin": 0,
+                  "measureMax": 10
+                },
+                "displayLegend": "auto",
+                "showSizeLegend": true,
+                "showToolTip": true,
+                "showInAllLevels": true,
+                "zoomRange": [
+                  0,
+                  20
+                ],
+                "showPopUp": true,
+                "displayUnselected": false,
+                "label": {
+                  "show": false,
+                  "expression": {
+                    "key": "Cidade",
+                    "label": "dimension.qDef.qFieldDefs[0]",
+                    "type": "expression"
+                  },
+                  "position": "TOP",
+                  "showInAllLevels": true,
+                  "visibleRange": [
+                    0,
+                    20
+                  ]
+                },
+                "drillDown": {
+                  "auto": true,
+                  "showLevel0": true,
+                  "showLevel1": true,
+                  "showLevel2": true,
+                  "showLevel3": true,
+                  "showLevel4": true,
+                  "showLevel5": true,
+                  "showLevel6": true,
+                  "showLevel7": true
+                },
+                "qHyperCubeDef": {
+                  "qDimensions": [
+                    {
+                      "qDef": {
+                        "qGrouping": "N",
+                        "qFieldDefs": [
+                          "[Cidade]"
+                        ],
+                        "qFieldLabels": [
+                          "Cidade"
+                        ],
+                        "qSortCriterias": [],
+                        "qNumberPresentations": [],
+                        "qActiveField": 0,
+                        "cId": "dd0"
+                      },
+                      "qOtherTotalSpec": {
+                        "qOtherMode": "OTHER_OFF",
+                        "qOtherCounted": {},
+                        "qOtherLimit": {},
+                        "qOtherLimitMode": "OTHER_GT_LIMIT",
+                        "qForceBadValueKeeping": true,
+                        "qApplyEvenWhenPossiblyWrongResult": true,
+                        "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                        "qTotalMode": "TOTAL_OFF",
+                        "qReferencedExpression": {}
+                      },
+                      "qOtherLabel": {},
+                      "qTotalLabel": {},
+                      "qCalcCond": {},
+                      "qAttributeExpressions": [],
+                      "qAttributeDimensions": [],
+                      "qCalcCondition": {
+                        "qCond": {},
+                        "qMsg": {}
+                      }
+                    }
+                  ],
+                  "qMeasures": [],
+                  "qInterColumnSortOrder": [],
+                  "qInitialDataFetch": [],
+                  "qReductionMode": "N",
+                  "qMode": "S",
+                  "qPseudoDimPos": -1,
+                  "qNoOfLeftDims": -1,
+                  "qMaxStackedCells": 5000,
+                  "qCalcCond": {},
+                  "qTitle": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qColumnOrder": [],
+                  "qExpansionState": []
+                },
+                "tooltip": {
+                  "auto": true,
+                  "data": {
+                    "qHyperCubeDef": {
+                      "qDimensions": [],
+                      "qMeasures": [],
+                      "qInterColumnSortOrder": [],
+                      "qInitialDataFetch": [
+                        {
+                          "qLeft": 0,
+                          "qTop": 0,
+                          "qWidth": 1,
+                          "qHeight": 0
+                        }
+                      ],
+                      "qReductionMode": "N",
+                      "qMode": "S",
+                      "qPseudoDimPos": -1,
+                      "qNoOfLeftDims": -1,
+                      "qMaxStackedCells": 5000,
+                      "qCalcCond": {},
+                      "qTitle": {},
+                      "qCalcCondition": {
+                        "qCond": {},
+                        "qMsg": {}
+                      },
+                      "qColumnOrder": [],
+                      "qExpansionState": []
+                    }
+                  }
+                },
+                "size": {
+                  "radiusMin": 4,
+                  "radiusMax": 12,
+                  "radiusValueMin": 0,
+                  "radiusValueMax": 1,
+                  "autoRadiusValueRange": true,
+                  "expression": {
+                    "key": "",
+                    "label": "",
+                    "type": "",
+                    "qNumFormat": {
+                      "qType": "U"
+                    }
+                  },
+                  "label": "",
+                  "slider": [
+                    8,
+                    24
+                  ],
+                  "sliderSingle": 16,
+                  "shape": "points",
+                  "formatting": {
+                    "qNumFormat": {
+                      "qType": "U"
+                    }
+                  }
+                }
+              }
+            ],
+            "mapSettings": {
+              "_layerType": "",
+              "baseMap": "default",
+              "projection": "default",
+              "mapLanguage": "auto",
+              "useImperialUnits": false,
+              "selectionType": "lasso",
+              "initialView": null,
+              "showLegend": true,
+              "sidebarAlignment": "auto",
+              "showFindLocationButton": false,
+              "showScaleBar": true,
+              "zoomLimitSwitch": false,
+              "zoomLimit": {
+                "range": [
+                  0,
+                  20
+                ]
+              },
+              "panLimitSwitch": false,
+              "panLimits": null,
+              "showDebugInfo": false
+            }
+          },
+          "analysis": {
+            "analysis": "geoAnalysis",
+            "analysisGroup": "breakdown",
+            "titleTemplate": [
+              {
+                "msgId": "cao.chart.values.title",
+                "msgParams": {
+                  "$$1": 0
+                }
+              },
+              {
+                "msgId": "cao.chart.values.title",
+                "msgParams": {
+                  "$$2": 0
+                }
+              }
+            ],
+            "dims": [
+              {
+                "expr": "[Cidade]",
+                "cType": "eField",
+                "field": "Cidade",
+                "locationInfo": {
+                  "expr": "=[QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo]",
+                  "mapLayer": "PointLayer",
+                  "field": "QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo"
+                },
+                "fieldStats": {
+                  "distinctCount": 29,
+                  "dataType": "string"
+                }
+              }
+            ],
+            "msrs": []
+          },
+          "isExtendedAnalysis": true,
+          "matchRecord": {
+            "analysisPrecedentId": "P-GeoMixed-SlotGroup",
+            "matches": [
+              {
+                "slot": "$$2",
+                "slotRole": "dimension",
+                "field": "Cidade",
+                "customExpr": "[Cidade]",
+                "exprType": "dimension",
+                "isPredefinedLibItem": false
+              }
+            ],
+            "precedentStats": {
+              "matchedFields": 0,
+              "uniquePrecedents": 0
+            },
+            "visType": "map"
+          },
+          "relevance": 0.9,
+          "analysisIntentRelevance": 0,
+          "libLabelLookup": {
+            "nXBAZD": "Total Venda"
+          }
         },
-        "components": []
+        "qUndoExclude": {
+          "hashCode": -840980712,
+          "gaLayers": [
+            {
+              "qHyperCubeDef": {
+                "qDimensions": [
+                  {
+                    "qDef": {
+                      "qGrouping": "N",
+                      "qFieldDefs": [
+                        "[Cidade]"
+                      ],
+                      "qFieldLabels": [
+                        "Cidade"
+                      ],
+                      "qSortCriterias": [],
+                      "qNumberPresentations": [],
+                      "qActiveField": 0,
+                      "cId": "dd0"
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qOtherLabel": {},
+                    "qTotalLabel": {},
+                    "qCalcCond": {},
+                    "qAttributeExpressions": [
+                      {
+                        "qExpression": "=[QVD/Transformado/Dimensoes/Clientes.Cidade_GeoInfo]",
+                        "id": "locationOrLatitude"
+                      }
+                    ],
+                    "qAttributeDimensions": [],
+                    "qCalcCondition": {
+                      "qCond": {},
+                      "qMsg": {}
+                    }
+                  }
+                ],
+                "qMeasures": [],
+                "qInterColumnSortOrder": [],
+                "qInitialDataFetch": [
+                  {
+                    "qLeft": 0,
+                    "qTop": 0,
+                    "qWidth": 1,
+                    "qHeight": 1000
+                  }
+                ],
+                "qReductionMode": "N",
+                "qMode": "S",
+                "qPseudoDimPos": -1,
+                "qNoOfLeftDims": -1,
+                "qMaxStackedCells": 5000,
+                "qCalcCond": {},
+                "qTitle": {},
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                },
+                "qColumnOrder": [],
+                "qExpansionState": []
+              },
+              "color": {
+                "outline": {
+                  "index": -1,
+                  "color": "#7b7a78"
+                },
+                "outlineOpacity": 1,
+                "opacity": 1,
+                "auto": false,
+                "mode": "primary",
+                "paletteColor": {
+                  "index": 6,
+                  "color": "#4477aa"
+                },
+                "measureScheme": "sg",
+                "dimensionScheme": "12",
+                "colorExpression": "",
+                "expressionIsColor": true,
+                "measureMin": 0,
+                "measureMax": 10
+              }
+            }
+          ]
+        }
       },
       "qChildren": []
     }
